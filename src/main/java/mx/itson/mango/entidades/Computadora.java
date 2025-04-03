@@ -19,8 +19,15 @@ public class Computadora extends DispositivoElectronico {
         this.espacioDisco = espacioDisco;
     }
     
-    public String restarEspacioDisco (int cantidad) {
-        if ()
+    public String disminuirEspacio (int cantidad) {
+        if (cantidad > espacioDisco){
+            return "El tamaño del archivo excede el espacio disponible";
+        }else {
+            this.espacioDisco -= cantidad;
+            return "La cantidad total del espacio actualizado es " + this.espacioDisco;
+            
+        }
+              
     
 }
     
