@@ -28,7 +28,11 @@ public class Computadora extends DispositivoElectronico {
             
         }
               
+    }
     
+    @Override
+    public double calcularDepreciacion(double precio){
+        return precio * 0.12;
 }
     
 }
